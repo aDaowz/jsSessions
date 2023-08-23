@@ -47,17 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (actionButtonArray.includes(keyCode)) {
                 const action = keyCode;
                 console.log(action, typeof action);
-                actionButtonPressed(action);
+                 actionButtonPressed(action);
+                // if (event.key === 'Backspace') {
+                //     clearButtonPressed();
+                // } else if (event.key === 'Escape') {
+                //     clearAllButtonPressed();
+                // } else if (event.key === 'Enter') {
+                //     resultButtonPressed(operator);
+                // } else if (event.key === '+' || event.key === '-' || event.key === '*' || event.key === '/') {
+                //     operationButtonPressed(event.key);
+                // }
             }
 
-            if (event.key === 'Backspace') {
-                clearButtonPressed();
-            } else if (event.key === 'Escape') {
-                clearAllButtonPressed();
-            } else if (event.key === 'Enter') {
-                resultButtonPressed();
-            } else if (event.key === '+' || event.key === '-' || event.key === '*' || event.key === '/') {
-                operationButtonPressed(event.key);
-            }
+            
 });
 });
